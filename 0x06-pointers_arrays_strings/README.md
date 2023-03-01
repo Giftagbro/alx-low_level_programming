@@ -1,0 +1,1 @@
+second pointer and array
