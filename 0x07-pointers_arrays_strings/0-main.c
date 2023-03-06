@@ -19,7 +19,7 @@ if (i % 10)
 {
 printf(" ");
 }
-if (!
+if (!(i % 10) && i)
 {
 printf("\n");
 }
