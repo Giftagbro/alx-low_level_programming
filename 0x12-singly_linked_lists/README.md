@@ -1,1 +1,1 @@
-this is a new project on linked  list
+this is a new project on linked list
