@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * read_textfile - reads a text file and prints to POSIX stdout
  * @filename: name of the file that's read
@@ -7,12 +8,13 @@
  * Return: the actual  number of letters read and printed, 0 if file cannot be
  * opened or read, 0 if @filename is NULL, 0 if write fails or doesn't write
  * the expected amount of bytes
+ * returns
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buff;
-	int fd, rd, wrt;
+	int rd, fd, wrt;
 
 	if (filename == NULL)
 		return (0);
@@ -40,8 +42,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
+	/*close fd*/
 	close(fd);
 	free(buff);
-	/*returns wrt*/
 	return (wrt);
 }
