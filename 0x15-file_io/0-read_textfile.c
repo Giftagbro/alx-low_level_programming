@@ -8,7 +8,7 @@
  * Return: the actual  number of letters read and printed, 0 if file cannot be
  * opened or read, 0 if @filename is NULL, 0 if write fails or doesn't write
  * the expected amount of bytes
- * returns
+ * returns (wrt)
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
