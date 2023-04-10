@@ -1,8 +1,3 @@
-/* 
-*File: 0-read_textfile.c
-*auth: Agbro Gift
-*/
-
 #include <stdlib.h>
 #include "main.h"
 
@@ -26,5 +21,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	free(buffer);
 	close(fd);
+	/*returns my_write*/
 	return (my_write);
 }
